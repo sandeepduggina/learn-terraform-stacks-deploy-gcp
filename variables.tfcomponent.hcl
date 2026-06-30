@@ -1,30 +1,14 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
-variable "regions" {
-  type = set(string)
-}
-
 variable "project_id" {
-  type = string
-}
-
-variable "environment" {
-  type = string
-}
-
-variable "identity_token" {
+  description = "GCP project ID"
   type        = string
-  ephemeral   = true
-  description = "JWT identity token"
 }
 
-variable "audience" {
+variable "region" {
+  description = "Region (e.g. us-west1)"
   type        = string
-  description = "JWT token audience"
 }
 
-variable "service_account_email" {
+variable "network_name" {
+  description = "VPC name (custom mode, no subnets created here)"
   type        = string
-  description = "Service account email"
 }
