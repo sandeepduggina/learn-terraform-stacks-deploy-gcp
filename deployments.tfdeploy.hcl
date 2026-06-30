@@ -10,8 +10,8 @@ deployment "development" {
     identity_token = identity_token.gcp.jwt
 
     audience              = "<YOUR_JWT_AUDIENCE>"
-    service_account_email = "<YOUR_SERVICE_ACCOUNT_EMAIL>"
-    project_id            = "<YOUR_GCP_PROJECT_ID>"
+    service_account_email = "dmahi982000@gmail.com"
+    project_id            = "scenic-firefly-476508-i4"
 
     regions     = ["us-central1"]
     environment = "dev"
